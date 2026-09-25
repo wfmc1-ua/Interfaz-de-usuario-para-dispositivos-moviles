@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name" translatable="false">Filmoteca</string>
+    <string name="using_mode">Using mode:</string>
+</resources>
