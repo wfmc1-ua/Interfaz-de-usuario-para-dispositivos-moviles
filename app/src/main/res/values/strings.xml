@@ -1,4 +1,12 @@
 <resources>
     <string name="app_name" translatable="false">Filmoteca</string>
+    <string name="Creator">Create by Wesley Murillo Castro</string>
     <string name="using_mode">Using mode:</string>
+    <string name="imgDescription">Image of SpongeBob</string>
+    <string name="webSite"> Go to WebSite</string>
+    <string name="support">Go to Support</string>
+    <string name="back">Back</string>
+    <string name="binding" translatable="false">Bindings</string>
+    <string name="notImplemented">Not implemented yet</string>
+
 </resources>

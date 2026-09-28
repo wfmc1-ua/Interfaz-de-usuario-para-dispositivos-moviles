@@ -11,6 +11,7 @@
         android:id="@+id/appBar"
         layout="@layout/app_bar"
         />
+
     <androidx.constraintlayout.widget.ConstraintLayout
     android:id="@+id/sobre"
     android:layout_width="match_parent"
@@ -23,7 +24,7 @@
             android:id="@+id/textView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Create by"
+            android:text="@string/Creator"
             android:textStyle="bold"
             android:textSize="20dp"
             app:layout_constraintStart_toStartOf="parent"
@@ -35,19 +36,19 @@
             android:id="@+id/imageView"
             android:layout_width="202dp"
             android:layout_height="191dp"
+            android:contentDescription="@string/imgDescription"
             android:visibility="visible"
             app:layout_constraintEnd_toEndOf="@id/textView"
-            app:layout_constraintTop_toBottomOf="@id/textView"
             app:layout_constraintStart_toStartOf="@id/textView"
-            app:srcCompat="@drawable/b427247ebed5ab1acca4a08855c0fd13"
-             />
+            app:layout_constraintTop_toBottomOf="@id/textView"
+            app:srcCompat="@drawable/b427247ebed5ab1acca4a08855c0fd13" />
 
         <Button
             android:id="@+id/websiteButton"
             android:layout_width="150dp"
             android:layout_height="60dp"
             android:layout_marginTop="80dp"
-            android:text="Go to website"
+            android:text="@string/webSite"
             app:layout_constraintEnd_toEndOf="@id/imageView"
             app:layout_constraintStart_toStartOf="@id/imageView"
 
@@ -58,7 +59,7 @@
             android:id="@+id/supportButton"
             android:layout_width="150dp"
             android:layout_height="60dp"
-            android:text="Go to support"
+            android:text="@string/support"
             app:layout_constraintStart_toStartOf="@id/websiteButton"
             app:layout_constraintTop_toBottomOf="@id/websiteButton"></Button>
 
@@ -66,8 +67,20 @@
             android:id="@+id/backButton"
             android:layout_width="150dp"
             android:layout_height="60dp"
-            android:text="Back"
+            android:text="@string/back"
             app:layout_constraintStart_toStartOf="@id/supportButton"
             app:layout_constraintTop_toBottomOf="@id/supportButton"></Button>
+
+        <TextView
+            android:id="@+id/mode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/Widget.Filmoteca.Text"
+            tools:text="@{@string/nombre_recurso + ' - Mi texto hardcodeado'}"
+            app:layout_constraintBottom_toBottomOf="parent"
+
+            app:layout_constraintStart_toStartOf="@id/supportButton"
+            app:layout_constraintEnd_toEndOf="@id/supportButton"/>
+
     </androidx.constraintlayout.widget.ConstraintLayout>
 </LinearLayout>
