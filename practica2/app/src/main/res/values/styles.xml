@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Mirrors defaultTextStyle() in MyCompose.kt so both UI modes render the same text -->
+    <style name="Widget.Filmoteca.Text" parent="">
+        <item name="android:textAppearance">?attr/textAppearanceTitleMedium</item>
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">?attr/colorOnBackground</item>
+        <item name="android:includeFontPadding">false</item>
+    </style>
+</resources>

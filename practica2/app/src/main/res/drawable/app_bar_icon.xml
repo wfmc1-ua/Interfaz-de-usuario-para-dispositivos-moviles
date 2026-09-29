@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- The launcher icon is an adaptive icon with no fixed size, so the app bar would draw it at
+     108dp. This gives it a fixed size, usable from the toolbar and from Compose -->
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:width="32dp"
+        android:height="32dp"
+        android:drawable="@mipmap/ic_launcher"
+        android:gravity="center" />
+</layer-list>
