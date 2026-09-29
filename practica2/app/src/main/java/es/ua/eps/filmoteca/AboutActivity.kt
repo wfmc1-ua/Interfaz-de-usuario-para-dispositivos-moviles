@@ -69,14 +69,13 @@ class AboutActivity : AppCompatActivity() {
     }
 
     private fun sendEmail(){
-        val viewIntent = Intent(Intent.ACTION_SENDTO, "wfmc1@gcloud.ua.es".toUri())
+        val viewIntent = Intent(Intent.ACTION_SENDTO, "mailto:wfmc1@gcloud.ua.es".toUri())
         try {
             startActivity(viewIntent)
         }catch (e: ActivityNotFoundException){
             Toast.makeText(this, R.string.no_app_available, Toast.LENGTH_LONG).show()
         }
     }
-
 
 
     private fun initUICompose() {
