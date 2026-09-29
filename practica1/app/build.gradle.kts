@@ -37,6 +37,9 @@ android {
         compose = true
         viewBinding = true
     }
+    androidResources {
+        generateLocaleConfig = true
+    }
 }
 
 dependencies {

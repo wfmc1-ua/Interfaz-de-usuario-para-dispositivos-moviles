@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="Creator">Creado por Wesley Murillo Castro</string>
+    <string name="creator">Creado por Wesley Murillo Castro</string>
     <string name="using_mode">Usando modo:</string>
     <string name="imgDescription">Imagen de Bob esponja</string>
     <string name="webSite">Ir al Sitio Web</string>
