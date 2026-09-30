@@ -1,4 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/filmList"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".FilmListActivity">
+    <include
+        android:id="@+id/appBar"
+        layout="@layout/app_bar" />
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -6,5 +17,35 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".FilmListActivity">
+    <Button
+        android:id="@+id/filmAButton"
+        android:layout_width="150dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="80dp"
+        android:text="@string/filmA"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"></Button>
+
+
+    <Button
+        android:id="@+id/filmBButton"
+        android:layout_width="150dp"
+        android:layout_height="60dp"
+        android:text="@string/filmB"
+        app:layout_constraintStart_toStartOf="@id/filmAButton"
+        app:layout_constraintTop_toBottomOf="@id/filmAButton"></Button>
+
+    <Button
+        android:id="@+id/about"
+        android:layout_width="150dp"
+        android:layout_height="60dp"
+        android:text="@string/about"
+        app:layout_constraintStart_toStartOf="@id/filmBButton"
+        app:layout_constraintTop_toBottomOf="@id/filmBButton"></Button>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>

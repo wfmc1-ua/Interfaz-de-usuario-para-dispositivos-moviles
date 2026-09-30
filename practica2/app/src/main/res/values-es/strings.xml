@@ -8,5 +8,8 @@
     <string name="back">Regresar</string>
     <string name="notImplemented">Todavia no se ha implementado</string>
     <string name="no_app_available">Aplicacion no disponible</string>
+    <string name="filmA">Ver pelicula A</string>
+    <string name="filmB">Ver pelicula B</string>
+    <string name="about">Sobre</string>
 
 </resources>

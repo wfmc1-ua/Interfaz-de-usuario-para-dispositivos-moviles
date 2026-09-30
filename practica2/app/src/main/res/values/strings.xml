@@ -9,4 +9,7 @@
     <string name="binding" translatable="false">Bindings</string>
     <string name="notImplemented">Not implemented yet</string>
     <string name="no_app_available">No app available</string>
+    <string name="filmA">View film A</string>
+    <string name="filmB">View film B</string>
+    <string name="about">About</string>
 </resources>
