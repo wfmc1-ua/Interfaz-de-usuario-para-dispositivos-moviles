@@ -11,5 +11,12 @@
     <string name="filmA">Ver pelicula A</string>
     <string name="filmB">Ver pelicula B</string>
     <string name="about">Sobre</string>
+    <string name="filmData">Datos de la pelicula</string>
+    <string name="viewFilm">"Ver la pelicula "</string>
+    <string name="editFilm">Editar la película</string>
+    <string name="returnMain">Volver a la página principal</string>
+    <string name="editingFilm">Editando película</string>
+    <string name="save">Guardar</string>
+    <string name="cancel">Cancelar</string>
 
 </resources>

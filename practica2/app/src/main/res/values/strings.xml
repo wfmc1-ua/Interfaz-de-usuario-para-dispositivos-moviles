@@ -12,4 +12,11 @@
     <string name="filmA">View film A</string>
     <string name="filmB">View film B</string>
     <string name="about">About</string>
+    <string name="filmData">Film Data</string>
+    <string name="viewFilm">View related film</string>
+    <string name="editFilm">Edit film</string>
+    <string name="returnMain">Back to main</string>
+    <string name="editingFilm">Editing film</string>
+    <string name="save">Save</string>
+    <string name="cancel">Cancel</string>
 </resources>

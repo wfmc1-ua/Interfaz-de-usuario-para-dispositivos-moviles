@@ -1,10 +1,73 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/main"
+    android:id="@+id/filmData"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".FilmDataActivity">
+    <include
+        android:id="@+id/appBar"
+        layout="@layout/app_bar"
+        />
+<androidx.constraintlayout.widget.ConstraintLayout
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".FilmDataActivity">
 
+    <TextView
+        android:id="@+id/DataText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/filmData"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        ></TextView>
+
+    <Button
+        android:id="@+id/viewFilmButton"
+        android:text="@string/viewFilm"
+        android:layout_width="150dp"
+        android:layout_height="60dp"
+        app:layout_constraintTop_toBottomOf="@id/DataText"
+        app:layout_constraintStart_toStartOf="@id/DataText"
+        app:layout_constraintEnd_toEndOf="@id/DataText"
+        ></Button>
+
+    <Button
+        android:id="@+id/editFilmButton"
+        android:text="@string/editFilm"
+        android:layout_width="150dp"
+        android:layout_height="60dp"
+        app:layout_constraintTop_toBottomOf="@id/viewFilmButton"
+        app:layout_constraintStart_toStartOf="@id/viewFilmButton"
+        app:layout_constraintEnd_toEndOf="@id/viewFilmButton"
+        ></Button>
+
+    <Button
+        android:id="@+id/backtoMainButton"
+        android:text="@string/returnMain"
+        android:layout_width="150dp"
+        android:layout_height="60dp"
+        app:layout_constraintTop_toBottomOf="@id/editFilmButton"
+        app:layout_constraintStart_toStartOf="@id/editFilmButton"
+        app:layout_constraintEnd_toEndOf="@id/editFilmButton"
+        ></Button>
+    <TextView
+        android:id="@+id/mode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/Widget.Filmoteca.Text"
+        app:layout_constraintBottom_toBottomOf="parent"
+
+        app:layout_constraintStart_toStartOf="@id/editFilmButton"
+        app:layout_constraintEnd_toEndOf="@id/editFilmButton"/>
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>
