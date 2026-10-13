@@ -80,13 +80,18 @@ class AboutActivity : AppCompatActivity() {
 
     private fun initUICompose() {
         setContent {
-            AboutScreen()
+            AboutScreen(onWebsite = { openWebsite() },
+                onSupport = { sendEmail() },
+                onBack = { finish() })
         }
     }
 
     @SuppressLint("LocalContextGetResourceValueCall")
     @Composable
-    fun AboutScreen() {
+    fun AboutScreen(onWebsite: () -> Unit,
+                    onSupport: () -> Unit,
+                    onBack: () -> Unit
+    ) {
         val context = LocalContext.current
         MyWindow {
             Column(
@@ -98,25 +103,15 @@ class AboutActivity : AppCompatActivity() {
                     painter = painterResource(id = R.drawable.b427247ebed5ab1acca4a08855c0fd13),
                     contentDescription = "Imagen del creador" // O usa null si es decorativa
                 )
-                Button(onClick ={ Toast.makeText(
-                    context,
-                    context.getString(R.string.notImplemented),
-                    Toast.LENGTH_LONG).show()} ){
+                Button(onClick =onWebsite){
                     Text(stringResource(R.string.webSite))
                 }
-                Button(onClick ={ Toast.makeText(
-                    context,
-                    context.getString(R.string.notImplemented),
-                    Toast.LENGTH_LONG).show()} ){
+                Button(onClick = onSupport ){
                     Text(stringResource(R.string.support))
                 }
-                Button(onClick ={ Toast.makeText(
-                    context,
-                    context.getString(R.string.notImplemented),
-                    Toast.LENGTH_LONG).show()} ){
+                Button(onClick =onBack ){
                     Text(stringResource(R.string.back))
                 }
-
 
             }
             MyText("${stringResource(R.string.using_mode)} ${GlobalMode.name}")
@@ -128,6 +123,8 @@ class AboutActivity : AppCompatActivity() {
     @Preview(showSystemUi = true, uiMode = UI_MODE_NIGHT_YES, name = "Dark Mode")
     @Composable
     fun AboutScreenPreview() {
-        AboutScreen()
+        AboutScreen(onWebsite = { openWebsite() },
+            onSupport = { sendEmail() },
+            onBack = { finish() })
     }
 }

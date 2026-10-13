@@ -18,5 +18,6 @@
     <string name="editingFilm">Editando película</string>
     <string name="save">Guardar</string>
     <string name="cancel">Cancelar</string>
+    <string name="edited">(editado)</string>
 
 </resources>

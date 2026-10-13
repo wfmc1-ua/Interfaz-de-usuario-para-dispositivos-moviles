@@ -5,4 +5,4 @@ enum class Mode {
     Compose,
 }
 
-val GlobalMode = Mode.Bindings
+val GlobalMode = Mode.Compose
