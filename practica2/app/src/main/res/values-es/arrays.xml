@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Same order as Film.Genre -->
+    <string-array name="genres">
+        <item>Accion</item>
+        <item>Drama</item>
+        <item>Comedia</item>
+        <item>Horror</item>
+        <item>Ciencia Ficción</item>
+    </string-array>
+
+    <!-- Same order as Film.Format -->
+    <string-array name="formats">
+        <item>DVD</item>
+        <item>Blu-ray</item>
+        <item>Online</item>
+    </string-array>
+</resources>

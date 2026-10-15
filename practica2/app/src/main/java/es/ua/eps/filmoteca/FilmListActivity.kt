@@ -81,8 +81,6 @@ class FilmListActivity : AppCompatActivity() {
         }
     }
 
-    @Preview(showSystemUi = true, name = "Light Mode")
-    @Preview(showSystemUi = true, uiMode = UI_MODE_NIGHT_YES, name = "Dark Mode")
     private fun initUICompose(){ //joho
         setContent {
             filmListScreen(
@@ -112,5 +110,7 @@ class FilmListActivity : AppCompatActivity() {
 
         }}
     }
+
+
 }
 

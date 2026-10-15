@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name" translatable="false">Filmoteca</string>
+    <string name="creator">Create by Wesley Murillo Castro</string>
+    <string name="using_mode">Using mode:</string>
+    <string name="imgDescription">Image of SpongeBob</string>
+    <string name="webSite"> Go to WebSite</string>
+    <string name="support">Go to Support</string>
+    <string name="back">Back</string>
+    <string name="binding" translatable="false">Bindings</string>
+    <string name="notImplemented">Not implemented yet</string>
+    <string name="no_app_available">No app available</string>
+    <string name="filmA">View film A</string>
+    <string name="filmB">View film B</string>
+    <string name="about">About</string>
+    <string name="filmData">Film Data</string>
+    <string name="viewFilm">View related film</string>
+    <string name="editFilm">Edit film</string>
+    <string name="returnMain">Back to main</string>
+    <string name="editingFilm">Editing film</string>
+    <string name="save">Save</string>
+    <string name="cancel">Cancel</string>
+    <string name="edited">(edited)</string>
+
+    <string name="genre_and_format">%1$s, %2$s</string>
+    <string name="director_format">Directed by %1$s</string>
+    <string name="year_format">Released in %1$d</string>
+    <string name="comments">Notes</string>
+    <string name="no_comments">No notes</string>
+    <string name="poster_description">Poster of %1$s</string>
+    <string name="view_imdb">View on IMDb</string>
+</resources>
