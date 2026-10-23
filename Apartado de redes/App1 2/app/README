@@ -1,0 +1,17 @@
+# Sensores
+
+App Android con dos funcionalidades: lectura del acelerómetro en tiempo real y acceso a la cámara del dispositivo.
+
+## Dispositivo de prueba
+- **Dispositivo:**  Pixel 10a
+- **Versión de Android:** Android 27 (API 37)
+
+## Permisos declarados
+| Permiso | Para qué se usa |
+|---|---|
+| `android.permission.CAMERA` | Mostrar la vista previa de la cámara en `CameraActivity`. Es un permiso peligroso, así que se solicita en tiempo de ejecución la primera vez que se abre la pantalla. |
+
+El acelerómetro no requiere ningún permiso: se accede a él directamente con `SensorManager`.
+
+## Mayor dificultad encontrada
+Durante el desarrollo de la practica los temas mas complicados fueron conectar los sensores y los pemisos de la camara ya que los que me dieron muchos problemas durante la configuración del SensorManager obtuve ayuda por medio de la ia que me resolvio donde fallaba he indico que tenia que poner

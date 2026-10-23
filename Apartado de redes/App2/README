@@ -1,0 +1,19 @@
+# SimReader
+
+App Android que muestra información de la tarjeta SIM y de la red móvil del dispositivo usando `TelephonyManager`.
+
+## Dispositivo de prueba
+- **Dispositivo:** Honor 400 Lite
+- **Versión de Android:** Android 16
+
+## Permisos declarados
+| Permiso | Para qué se usa |
+|---|---|
+| `android.permission.READ_PHONE_STATE` | Leer los datos de la SIM y de la red: estado de la SIM, operador, país, tipo de red, etc. |
+| `android.permission.ACCESS_FINE_LOCATION` | Obtener la información de la celda a la que está conectado el móvil. Desde Android 10, `getAllCellInfo()` exige ubicación precisa. |
+| `android.permission.ACCESS_COARSE_LOCATION` | Desde Android 12 se tiene que pedir junto a `FINE_LOCATION`, porque el usuario puede elegir conceder solo la ubicación aproximada. |
+
+Los tres son permisos peligrosos y se solicitan en tiempo de ejecución al abrir la app.
+
+## Mayor dificultad encontrada
+La mayor dificultad fueron las diferencias entre versiones de Android en la API de telefonía. Desde Android 10, el IMEI, el IMSI y el ICCID están reservados a las apps del sistema: aunque la app tenga `READ_PHONE_STATE`, las llamadas lanzan una `SecurityException`. Hubo que capturar la excepción en cada lectura y mostrar un mensaje que explica la restricción, para que la app no se cierre. Además, varias APIs están obsoletas según la versión (`PhoneStateListener` frente a `TelephonyCallback` a partir de Android 12, `mcc`/`mnc` frente a `mccString`/`mncString` a partir de Android 10), así que hubo que comprobar `Build.VERSION.SDK_INT` en cada caso. La ubicación también dio problemas: en Android 12 o superior, pedir `FINE_LOCATION` sin `COARSE_LOCATION` hace que el sistema ignore la petición

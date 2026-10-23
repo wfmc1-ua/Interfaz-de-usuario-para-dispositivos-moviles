@@ -168,7 +168,7 @@ class MainActivity : AppCompatActivity() {
         else -> "Desconocido (tipo $type)"
     }
 
-    // ── Celda en servicio + Vecinas ───────────────────────────────────────────
+
 
     private fun loadCellInfo() {
         val hasLocation = hasPermission(Manifest.permission.ACCESS_FINE_LOCATION)
@@ -197,13 +197,13 @@ class MainActivity : AppCompatActivity() {
         val serving = cells.filter { it.isRegistered }
         val neighbors = cells.filter { !it.isRegistered }
 
-        // Serving cell
+        // celdas
         val sbServing = StringBuilder()
         val servingList = serving.ifEmpty { listOf(cells.first()) }
         for (cell in servingList) sbServing.append(formatCellFull(cell))
         tvCellInfo.text = sbServing.toString().trimEnd()
 
-        // Neighbor cells
+        // celdas vecinas
         if (neighbors.isEmpty()) {
             tvNeighborCells.text = "No se encontraron celdas vecinas"
         } else {
@@ -267,7 +267,6 @@ class MainActivity : AppCompatActivity() {
         }
     }
 
-    // ── Datos restringidos ────────────────────────────────────────────────────
 
     private fun loadRestrictedData() {
         val sb = StringBuilder()
