@@ -6,52 +6,66 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context=".FilmEditActivity">
-    <include
-        android:id="@+id/appBar"
-        layout="@layout/app_bar"
-        />
+
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        tools:context=".FilmEditActivity">
+        android:layout_height="match_parent">
 
-        <TextView
-            android:id="@+id/editingFilm"
-            android:layout_width="wrap_content"
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="176dp"
+            android:layout_height="189dp"
+            android:visibility="visible"
+            app:srcCompat="@drawable/poster_el_quinto_elemento"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="85dp" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/editingFilm"
-            android:textStyle="bold"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            ></TextView>
-        <Button
-            android:id="@+id/saveButton"
-            android:text="@string/save"
-            android:layout_width="150dp"
-            android:layout_height="60dp"
-            app:layout_constraintTop_toBottomOf="@id/editingFilm"
-            app:layout_constraintStart_toStartOf="@id/editingFilm"
-            app:layout_constraintEnd_toEndOf="@id/editingFilm"
-            ></Button>
+            app:layout_constraintTop_toBottomOf="@id/imageView2">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Title" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <include
+            android:id="@+id/appBar"
+            layout="@layout/app_bar" />
 
         <Button
             android:id="@+id/cancel_button"
-            android:text="@string/cancel"
             android:layout_width="150dp"
             android:layout_height="60dp"
-            app:layout_constraintTop_toBottomOf="@id/saveButton"
-            app:layout_constraintStart_toStartOf="@id/saveButton"
-            app:layout_constraintEnd_toEndOf="@id/saveButton"
-            ></Button>
+            android:layout_marginStart="60dp"
+            android:text="@string/cancel"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:layout_editor_absoluteY="536dp"></Button>
+
+        <Button
+            android:id="@+id/saveButton"
+            android:layout_width="150dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="63dp"
+            android:text="@string/save"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@id/cancel_button"
+            tools:layout_editor_absoluteY="533dp"></Button>
+
         <TextView
             android:id="@+id/mode"
+            style="@style/Widget.Filmoteca.Text"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            style="@style/Widget.Filmoteca.Text"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintStart_toStartOf="@id/cancel_button"
-            app:layout_constraintEnd_toEndOf="@id/cancel_button"/>
+            app:layout_constraintEnd_toEndOf="@id/cancel_button"
+            app:layout_constraintStart_toStartOf="@id/cancel_button" />
+
     </androidx.constraintlayout.widget.ConstraintLayout>
+
+
 </LinearLayout>
