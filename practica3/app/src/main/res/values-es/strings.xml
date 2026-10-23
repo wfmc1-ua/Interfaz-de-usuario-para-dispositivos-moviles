@@ -6,27 +6,31 @@
     <string name="webSite">Ir al Sitio Web</string>
     <string name="support">Obtener Soporte</string>
     <string name="back">Regresar</string>
-    <string name="notImplemented">Todavia no se ha implementado</string>
     <string name="no_app_available">Aplicacion no disponible</string>
     <string name="filmA">Ver pelicula A</string>
     <string name="filmB">Ver pelicula B</string>
     <string name="about">Sobre</string>
-    <string name="filmData">Datos de la pelicula</string>
-    <string name="viewFilm">"Ver la pelicula "</string>
     <string name="editFilm">Editar la película</string>
     <string name="returnMain">Volver a la página principal</string>
-    <string name="editingFilm">Editando película</string>
     <string name="save">Guardar</string>
     <string name="cancel">Cancelar</string>
-    <string name="edited">(editado)</string>
 
 
     <!-- Pantalla de datos de una película -->
     <string name="genre_and_format">%1$s, %2$s</string>
-    <string name="director_format">Dirigida por %1$s</string>
-    <string name="year_format">Estrenada en %1$d</string>
     <string name="comments">Notas</string>
     <string name="no_comments">Sin notas</string>
     <string name="poster_description">Cartel de %1$s</string>
     <string name="view_imdb">Ver en IMDb</string>
+
+    <!-- Pantalla de edición de una película -->
+    <string name="take_photo">Hacer foto</string>
+    <string name="select_image">Elegir imagen</string>
+    <string name="title_hint">Título</string>
+    <string name="director_hint">Director</string>
+    <string name="year_hint">Año</string>
+    <string name="genre_hint">Género</string>
+    <string name="format_hint">Formato</string>
+    <string name="imdb_hint">Enlace a IMDb</string>
+    <string name="image_error">No se ha podido cargar la imagen</string>
 </resources>
